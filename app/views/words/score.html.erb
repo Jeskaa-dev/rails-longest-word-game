@@ -1,0 +1,13 @@
+<div class="container">
+<h1>Now your results</h1>
+<div class="box">
+  <p>Letter combination : <%= @letterscombi%></p>
+  <p>Your word : <%= params[:input].upcase%></p>
+    <p>Your word test : <%= @wordtest%></p>
+  <p>Your score : <%= @score%></p>
+  <p>Message : <%= @message%></p>
+  </div>
+  <div id="new-link">
+    <%= link_to "Play again", shuffle_path %>
+  </div>
+</div>
